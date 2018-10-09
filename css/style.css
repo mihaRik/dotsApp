@@ -1,0 +1,18 @@
+.circle{
+    height: 50px;
+    width: 50px;
+    background: rgba(128, 0, 128, 0.527);
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease-out;
+}
+.randomPos{
+    height: 50px;
+    width: 50px;
+    background: rgba(128, 0, 128, 0.527);
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: all 1s ease-out;
+}
