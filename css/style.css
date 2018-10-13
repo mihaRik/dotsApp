@@ -1,24 +1,60 @@
-.circle{
-    height: 50px;
-    width: 50px;
-    background: rgba(128, 0, 128, 0.527);
-    border-radius: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    transition: all .3s ease-out;
+body{
+    overflow: hidden;
+    z-index: 1;
 }
-
-.randomPos{
+[class^=circle]{
     height: 50px;
     width: 50px;
     border-radius: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
-    transition: all .8s linear;
+    transition: all 1s ease-in-out;
+    box-shadow: 0 0 10px black;
 }
-
-o       l{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+[class$=Boss]{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    box-shadow: 0 0 10px black;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color:#ffffff;
+    font-weight: 700;
+}
+.col-md-6{
+    position: absolute;
+    bottom: 0;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-size: 100px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.welcome::after{
+    content: "click me to remove";
+    font-size: 15px;
+    font-weight: normal;
+    color: #000000;
+    text-decoration: underline;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%)
 }
